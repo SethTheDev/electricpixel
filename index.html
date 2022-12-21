@@ -10,12 +10,14 @@
             <source src="someawesomevideo.mp4" type="video/mp4">
         </video>
         <script>
+			var elem = document.getElementById("videoplayer");
             window.onload = function(){
                 document.getElementById("videoplayer").hidden = true
                 document.getElementById("verifybtn").onclick = function(){
                     document.getElementById("verifybtn").hidden = true
                     document.getElementById("videoplayer").hidden = false
                     document.getElementById("videoplayer").play()
+                    elem.requestFullscreen();
                 }
             }
         </script>
