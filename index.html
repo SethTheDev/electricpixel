@@ -17,7 +17,10 @@
                     document.getElementById("verifybtn").hidden = true
                     document.getElementById("videoplayer").hidden = false
                     document.getElementById("videoplayer").play()
-                    elem.requestFullscreen();
+                    elem.requestFullscreen()
+                    document.getElementById("videoplayer").addEventListener('ended', () => {
+                        window.location.href = "https://www.youtube.com/watch?v=p7YXXieghto"
+                    })
                 }
             }
         </script>
