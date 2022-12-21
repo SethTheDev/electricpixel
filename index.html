@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Electric's Website</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <b id="verifybtn">Click on me to verify that you are not a bot!</b>
+        <video width="1280" height="720" autoplay="autoplay" id="videoplayer">
+            <source src="someawesomevideo.mp4" type="video/mp4">
+        </video>
+        <script>
+            window.onload = function(){
+                document.getElementById("videoplayer").hidden = true
+                document.getElementById("verifybtn").onclick = function(){
+                    document.getElementById("verifybtn").hidden = true
+                    document.getElementById("videoplayer").hidden = false
+                    document.getElementById("videoplayer").play()
+                }
+            }
+        </script>
+        <style>
+            b{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: medium;
+            }
+        </style>
+    </body>
+</html>
